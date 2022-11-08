@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript TI16</title>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Tabelinha IMC</h1>
+        <p class="lead">Calculo IMC automático</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-2">
+
+                <div class="modal">
+                    <p>Campo inválido</p>
+                </div>
+                <table id="tabela" class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Peso(Kg)</th>
+                            <th scope="col">Altura(M)</th>
+                            <th scope="col">Gordura Corporal(%)</th>
+                            <th scope="col">IMC</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="linha-tabela">
+                            <th scope="row">Amanda Martins</th>
+                            <td>64,5</td>
+                            <td>1.66</td>
+                            <td>10</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="linha-tabela">
+                            <th scope="row">Mateus Maritan</th>
+                            <td>54,5</td>
+                            <td>1.67</td>
+                            <td>13</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="linha-tabela">
+                            <th scope="row">Moises Simioni</th>
+                            <td>34,5</td>
+                            <td>1.70</td>
+                            <td>12</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="linha-tabela">
+                            <th scope="row">Mayza Avelino</th>
+                            <td>84,5</td>
+                            <td>1.45</td>
+                            <td>11</td>
+                            <td>0</td>
+                        </tr>
+                        <tr class="linha-tabela">
+                            <th scope="row">John Doe</th>
+                            <td>25,5</td>
+                            <td>1.25</td>
+                            <td>8</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <div class="card mb-5 mt-5">
+                    <div class="card-header">
+                        <h1> Adicionar novo paciente</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" id="formulario">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Nome</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="nome"
+                                    aria-describedby="emailHelp" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Peso</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Peso"
+                                    name="peso">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Altura</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" name="altura"
+                                    aria-describedby="emailHelp" placeholder="Altura">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">% Gordura</label>
+                                <input type="text" class="form-control" name="gordura" placeholder="% Gordura">
+                            </div>
+                            <button id="enviar" class="btn btn-primary">Adicionar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script id="meu-script" src="./app.js"></script>
+</body>
+
+</html>
